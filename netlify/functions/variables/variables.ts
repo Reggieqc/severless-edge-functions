@@ -16,6 +16,7 @@ export const handler: Handler = async (
     if (!myImportantVariable) {
       throw "Missing MY_IMPORTANT_VARIABLE environment variable";
     }
+    console.log('hola mundo desde los logs');
     return {
       statusCode: 200,
       body: JSON.stringify(myImportantVariable),
