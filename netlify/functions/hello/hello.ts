@@ -6,7 +6,7 @@ import type {
   HandlerEvent,
 } from "@netlify/functions";
 
-const handler: Handler = async (
+export const handler: Handler = async (
   event: HandlerEvent,
   context: HandlerContext,
 ) => {
@@ -18,9 +18,7 @@ const handler: Handler = async (
     },
   };
 };
-const config: Config = {
+
+export const config: Config = {
   path: "/hello",
 };
-
-export { handler };
-export { config };
